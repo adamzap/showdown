@@ -101,14 +101,8 @@
 		}
 		
 		#paneSetting {
-			display: block;
-			margin-left: auto;
-			margin-right: 0.5em;
-			font-size: 110%;
-			font-weight: 900;
-			font-family: Arial, Verdana, sans-serif;
 			background-color: #dacccc;
-			color: #444;
+			color: #222;
 			border: 1px solid #999;
 		}
 		
@@ -314,11 +308,6 @@ Showdown is a Javascript port of Markdown.  You can get the full [source code] b
 
 	<div id="rightContainer">
 		<div class="paneHeader">
-			<select id="paneSetting">
-				<option value="previewPane">Preview</option>
-				<option value="outputPane">HTML Output</option>
-				<option value="syntaxPane">Syntax Guide</option>
-			</select>
 		</div>
 	
 		<textarea id="outputPane" class="pane" cols="80" rows="20" readonly="readonly"></textarea>
@@ -737,6 +726,12 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 				<option value="delayed">in the background</option>
 				<option value="continuous">every keystroke</option>
 				<option value="manual">manually</option>
+			</select>
+
+			<select id="paneSetting">
+				<option value="previewPane">Preview</option>
+				<option value="outputPane">HTML Output</option>
+				<option value="syntaxPane">Syntax Guide</option>
 			</select>
 		</span>
 		<div id="processingTime" title="Last processing time">0 ms</div>
